@@ -1,17 +1,18 @@
 html {
     background-color: #F2AEC7;
     width: auto;
+    font-family: 'Redressed', cursive;
   }
   header {
     background-image: url(Images/HeaderBackground.png);
-    height: 6em;
+    height: 10em;
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 4em;
     text-align: center;
     color: #000000;
     font-family: 'The Nautigal', cursive;
-    margin-top: -1em;
+    padding-top: 1em;
   }
   h1{
     padding-top: 6%;
@@ -21,13 +22,19 @@ html {
       font-size: 7em;
       justify-content: center;
       margin-bottom: .5em;
-      background: #F2AEC7;
-      color: #fff;
       min-height: 10vh;
       text-align: center;
       font-family: 'Niconne', cursive;
     }
-    
+    h4 {
+      align-items: center;
+      font-size: 4em;
+      justify-content: center;
+      margin-bottom: .5em;
+      min-height: 10vh;
+      text-align: center;
+      font-family: 'Niconne', cursive;
+    }
     .cupid {
       width: 200px;
       height: auto;
@@ -57,35 +64,7 @@ html {
       font-size: 2em;
     }
     
-    ul.weekdays {
-      margin-bottom: 1em;
-      color: white;
-    }
-    
-    ul.weekdays li {
-      height: 4vw;
-    }
-    
-    ol.day-grid li {
-      background-color: #DB8EB2;
-      
-      height: 12vw;
-      max-height: 125px;
-    }
-    
-    .days {
-      border: 1px solid #080202;
-    }
-    ul.weekdays abbr[title] {
-      border: solid 2px;
-      font-weight: 800;
-      text-decoration: none;
-    }
-    
-    ol.day-grid li:nth-child(1){
-      grid-column: 1 / span 2;
-      background-color: #F2AEC7;
-    }
+  
     
   
     .grid {
@@ -153,19 +132,60 @@ html {
     margin: auto;
   }
   .sidebar-left, .sidebar-right {
-    color: #F27E7E;
     padding: 10px;
   }
   .romance {
     grid-row: 3;
     grid-column: 1 / 3;
     font-size: 2em;
-    color: #F27E7E;
+  }
+  #up-arrow,#down-arrow{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  #total-count{
+    font-weight: 700;
+    font-size: 50px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #myDIV {
+    padding: 16px;
+    font-size: 2em;
+  }
+  .questions {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25%;
+    font-size: 1.5em;
+  }
+  #myInput, #mInput, #fill, #Input, #input {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  }
+  #p2, #much, #other{
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  #bigger, #tell {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+  }
+  #demo {
+    font-size: 75%;
+    font-family: 'Redressed', cursive;
   }
   /* When the viewport gets smaller than 800px the font reverts back the default font */
   @media all and (min-width: 800px) {
-    .sidebar-left, .sidebar-right, .romance {
-      font-family: 'Niconne', cursive;
+   
+    #repeat {
+      font-size: 2em;
     }
   }
   /* the look of the grid layout*/
@@ -247,7 +267,6 @@ html {
       grid-column: 1 / 4;
     }
     .sidebar-left, .sidebar-right {
-      color: #F27E7E;
       padding: 10px;
     }
     h2 {
@@ -257,8 +276,14 @@ html {
       grid-row: 3;
       grid-column: 1 / 3;
       font-size: 2em;
-      color: #F27E7E;
+      }
+      #much{
+        text-align: center;
+        font-size: .75em;
       }
   }
+
+  
+  
   /*CSS is compliant per W3C CSS Validation Service*/
   /* Page is responsive and valid using emulator LT Browser*/
